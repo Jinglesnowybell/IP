@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="Loading.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <div class = "container">
+        <div class = "svg hide" id = "svg"></div>
+        <h1> Loading! </h1>
+        <p> This may take a while! </p>
+  
+        <button> Get Started! </button>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+    </div>
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js" integrity="sha512-H6aKTjvYAazW0iNuGj1f2dZvSWlt1HGZGEDsXRPETo2IB4H6v36Vl2qiZNlCRxOp0kT7iBf+7USNPavNscZGAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <script>
+      const play = document.querySelector("button");
+      const svgContainer = document.getElementByID("svg");
+      const animItem = bodymovin.loadAnimation({
+        wrapper: svgContainer,
+        animType: 'svg',
+        loop: false,
+        autoplay: false,
+        path: "https://assets5.lottiefiles.com/datafiles/U1I3rWEyksM9cCH/data.json"
+    });
+  
+      play.addEventListener('click', () => {
+        animItem.goToAndPlay(0,true);
+      }
+    </script>
+  </body>

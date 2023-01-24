@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body{
+    background: rgb(27, 27, 27);
+    margin:0;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  .container{
+    justfiy-content: center;
+    position: relative;
+    margin: 0 auto;
+    background: black;
+    padding: 2em;
+    
+  
+    h1{
+      margin:0;
+    }
+    p{
+      color: gray;
+    }
+  }
+  
+  svg.{
+    width: 200px;
+    position: absolute;
+    top: -40;
+    left: -30;
+    pointer-events: none;
+  }
+  
+  .hide{
+    display:none;
+  }
