@@ -13,29 +13,28 @@ html, body {
   }
   
   .container{
-    justfiy-content: center;
+    justify-content: center;
     position: relative;
     margin: 0 auto;
     background: black;
     padding: 2em;
-    
-  
-    h1{
-      margin:0;
-    }
-    p{
-      color: gray;
-    }
   }
   
-  svg.{
-    width: 200px;
-    position: absolute;
-    top: -40;
-    left: -30;
-    pointer-events: none;
+  .square {
+    height: 50px;
+    width: 50px;
+    background-color: white;
   }
-  
+
   .hide{
     display:none;
+  }
+
+  .box {
+    margin:0 auto; 
+    width:600px;
+    height:600px;
+    padding:20px;
+    background:white;
+    border:2px solid #333;
   }
